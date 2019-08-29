@@ -11,11 +11,16 @@ class UsersController < ApplicationController
     @user = User.find_by(email: params[:email])
     # authenticate the user
     if @user && @user.authenticate(params[:password])
+
       # log the user in by creating key/value pair in session hash
       session[:user_id] = @user.id
+
+
       # redirect to the users profile (show/profile, index, dashboard)
       redirect "/users/#{@user.id}"
+
     else
+      binding.pry
       # show error message
       # redirect them back to login
       redirect '/login'
