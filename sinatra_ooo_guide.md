@@ -43,20 +43,21 @@
 *IMPORTANT:* Build views and controller actions based on the flow of your app, one step at a time, testing as you go!
   - Use `shotgun` and `pry` (or `raise`/`inspect`) all the time!
 
-- [x] 9. Start with your `UsersController`
+- [ ] 9. Start with your `UsersController`
+  - Mount your controller 
   - Add your `get` login/signup/logout routes
   - Add your `post` login/sign up routes
 
-- [x] 10. Enable `sessions` in `ApplicationController`
+- [ ] 10. Enable `sessions` in `ApplicationController`
   - Enable sessions
   - Create session secret
 
-- [x] 11. Create your views
+- [ ] 11. Create your views
   - display login form
   - display signup form
   - user show page
 
-- [x] 12. Create your `ApplicationController` helper methods
+- [ ] 12. Create your `ApplicationController` helper methods
   - `#logged_in?`
   - `#current_user`
 
