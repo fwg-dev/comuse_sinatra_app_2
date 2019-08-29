@@ -4,4 +4,7 @@ if ActiveRecord::Migrator.needs_migration?
   raise 'Migrations are pending. Run `rake db:migrate` to resolve the issue.'
 end
 
+# mount controllers here
+use UsersController
+
 run ApplicationController

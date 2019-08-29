@@ -21,11 +21,11 @@
 
 - [x] 5. Generate new project using corneal gem
 - [x] 6. Create github repo
-- [ ] 7. Build your models
+- [x] 7. Build your models
       - Migrations
       - Model classes
       - Associations
-- [ ] 8. Test your models and associations in the console
+- [x] 8. Test your models and associations in the console
       - Create some seed data
       - Adjust migrations as needed
 
@@ -35,16 +35,6 @@
 - Associations (has_many, belongs_to macro)
 - `has_secure_password`
 - Migrations
-
-
-
-
-
-
-
-
-
-
 
 ### PART 2 — User Authentication
 
@@ -71,6 +61,15 @@
   - `#current_user`
 
 - [ ] 13. Build out controller routes for other models (add a controller for each model)
+
+
+
+
+
+
+
+
+
 
 ### PART 3 — CRUD
 
