@@ -31,6 +31,7 @@ class UsersController < ApplicationController
   # accept sign up params and create a user
   post '/signup' do
     # create user
+    # password digest has a validation
     @user = User.create(params)
     # log the user in
     session[:user_id] = @user.id
