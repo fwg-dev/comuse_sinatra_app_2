@@ -44,7 +44,7 @@
   - Use `shotgun` and `pry` (or `raise`/`inspect`) all the time!
 
 - [ ] 9. Start with your `UsersController`
-  - Mount your controller 
+  - Mount your controller
   - Add your `get` login/signup/logout routes
   - Add your `post` login/sign up routes
 
@@ -62,15 +62,6 @@
   - `#current_user`
 
 - [ ] 13. Build out controller routes for other models (add a controller for each model)
-
-
-
-
-
-
-
-
-
 
 ### PART 3 — CRUD
 

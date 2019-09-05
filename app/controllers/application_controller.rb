@@ -12,7 +12,12 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/" do
-    erb :welcome
+    if logged_in?
+      # redirects to users show page
+      redirect "/users/#{current_user.id}"
+    else
+      erb :welcome
+    end
   end
 
   helpers do
@@ -28,7 +33,6 @@ class ApplicationController < Sinatra::Base
       # will our boolean method decalaration error out?
       current_user
     end
-
   end
 
 end
