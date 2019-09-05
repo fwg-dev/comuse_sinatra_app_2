@@ -6,5 +6,6 @@ end
 
 # mount controllers here
 use UsersController
+use PostsController
 
 run ApplicationController
