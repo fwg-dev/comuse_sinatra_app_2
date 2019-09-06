@@ -9,6 +9,8 @@ class ApplicationController < Sinatra::Base
     enable :sessions
     # i need to set something here
     set :session_secret, "our_secret_session"
+    # registering the sinatra flash gem
+    register Sinatra::Flash
   end
 
   get "/" do
@@ -32,6 +34,10 @@ class ApplicationController < Sinatra::Base
       # can add double bang operator to return true or false
       # will our boolean method decalaration error out?
       current_user
+    end
+
+    def authorized_to_edit?(post)
+      current_user == post.user
     end
   end
 

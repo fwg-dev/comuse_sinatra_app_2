@@ -13,10 +13,13 @@ class UsersController < ApplicationController
     if @user && @user.authenticate(params[:password])
       # log the user in by creating key/value pair in session hash
       session[:user_id] = @user.id
+      #show success message
+      flash[:message] = "Welcome back, #{@user.name}"
       # redirect to the users profile (show/profile, index, dashboard)
       redirect "/users/#{@user.id}"
     else
       # show error message
+      flash[:error] = "Your credentials were invaid."
       # redirect them back to login
       redirect '/login'
     end
@@ -29,7 +32,7 @@ class UsersController < ApplicationController
   end
 
   # accept sign up params and create a user
-  post '/signup' do
+  post '/users' do
     # create user
     # password digest has a validation
     @user = User.create(params)
